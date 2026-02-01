@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact NET BAY - Get in Touch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        body { background-color: #0f172a; color: #e5e7eb; }
+        .hero-bg { background: linear-gradient(to bottom, #111827, #0a1420, #111827); }
+        .section-bg-1 { background-color: #111827; }
+        .section-bg-2 { background: linear-gradient(to bottom, #111827, #0a1420); }
+        .btn-primary { background: linear-gradient(to right, #b8860b, #1e3a5f); color: white; padding: 1rem 2rem; border-radius: 0.5rem; font-weight: bold; display: inline-block; transition: all 0.3s; }
+        .btn-primary:hover { transform: scale(1.05); }
+        .card { background: linear-gradient(135deg, #1f2937, #111827); border: 1px solid #1e3a5f; border-radius: 0.75rem; padding: 2rem; }
+        .text-accent { color: #b8860b; }
+        .icon-box { background: linear-gradient(135deg, #b8860b, #1e3a5f); border-radius: 0.5rem; }
+        h1, h2, h3 { color: white; font-weight: bold; }
+        a { text-decoration: none; }
+        nav { background: rgba(17, 24, 39, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #1e3a5f; }
+        footer { background-color: #030712; border-top: 1px solid #1e3a5f; }
+        input, textarea, select { background-color: #1f2937; border: 1px solid #374151; color: white; padding: 0.75rem 1rem; border-radius: 0.5rem; }
+        input::placeholder, textarea::placeholder { color: #9ca3af; }
+        input:focus, textarea:focus, select:focus { outline: none; border-color: #b8860b; box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 icon-box flex items-center justify-center">
+                    <i class="fas fa-network-wired text-white font-bold"></i>
+                </div>
+                <span class="text-2xl font-bold text-accent">NET BAY</span>
+            </div>
+            <ul class="hidden md:flex gap-8">
+                <li><a href="index.html" class="text-gray-100 hover:text-accent transition">Home</a></li>
+                <li><a href="about.html" class="text-gray-100 hover:text-accent transition">About</a></li>
+                <li><a href="services.html" class="text-gray-100 hover:text-accent transition">Services</a></li>
+                <li><a href="#contact" class="text-gray-100 hover:text-accent transition">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-accent text-xl"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero -->
+    <section id="contact" class="hero-bg min-h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl" style="background-color: #1e3a5f; animation: pulse 3s infinite;"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl" style="background-color: #b8860b; animation: pulse 3s infinite 0.5s;"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white animate__animated animate__fadeInUp">
+                Get in <span class="text-accent">Touch</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                Let's discuss how NET BAY can accelerate your business transformation
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 2: Contact Info Cards -->
+    <section class="section-bg-1 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #b8860b; border-radius: 0.5rem;">
+                        <i class="fas fa-map-marker-alt text-gray-900 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Visit Us</h3>
+                    <p class="text-gray-300">
+                        8815 E. Echo Ct.<br/>
+                        Inverness, FL 34450<br/>
+                        United States
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #003d5c; border-radius: 0.5rem;">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Email Us</h3>
+                    <p class="text-gray-300">
+                        <a href="mailto:info@netbayllc.com" class="hover:text-accent transition">info@netbayllc.com</a><br/>
+                        <a href="mailto:support@netbayllc.com" class="hover:text-accent transition">support@netbayllc.com</a>
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #1e3a5f; border-radius: 0.5rem;">
+                        <i class="fas fa-phone text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Call Us</h3>
+                    <p class="text-gray-300">
+                        Mon-Fri: 8am - 6pm EST<br/>
+                        <a href="tel:+1234567890" class="hover:text-accent transition">+1 (234) 567-8900</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Contact Form -->
+    <section class="section-bg-2 py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">Send Us a Message</h2>
+            <p class="text-center text-gray-400 mb-12">Have questions? Our team would love to hear from you.</p>
+            
+            <form id="contactForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Name</label>
+                        <input type="text" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Email</label>
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Company</label>
+                        <input type="text" name="company" placeholder="Your company name" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Phone</label>
+                        <input type="tel" name="phone" placeholder="+1 (555) 123-4567">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Service Interest</label>
+                        <select name="service" required style="width: 100%;">
+                            <option value="">Select a service...</option>
+                            <option value="development">Custom Development</option>
+                            <option value="cloud">Cloud Infrastructure</option>
+                            <option value="security">Security & Compliance</option>
+                            <option value="support">Maintenance & Support</option>
+                            <option value="analytics">Data Analytics</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Project Budget</label>
+                        <select name="budget" required style="width: 100%;">
+                            <option value="">Select a budget range...</option>
+                            <option value="25k">$25,000 - $50,000</option>
+                            <option value="50k">$50,000 - $100,000</option>
+                            <option value="100k">$100,000 - $250,000</option>
+                            <option value="250k">$250,000+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">Message</label>
+                    <textarea name="message" rows="6" placeholder="Tell us about your project, timeline, and goals..." required></textarea>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="agreed" name="agreed" required>
+                    <label for="agreed" class="text-gray-400">
+                        I agree to the privacy policy and consent to being contacted
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary w-full md:w-auto">Send Message</button>
+            </form>
+
+            <div id="formMessage" class="mt-6 p-4 rounded-lg hidden" style="background-color: rgba(184, 134, 11, 0.1); border: 1px solid #b8860b;">
+                <p id="messageText" class="text-accent"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Hours & Location -->
+    <section class="section-bg-1 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Business Hours</h2>
+                    <div class="space-y-4">
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Monday - Friday</span>
+                            <span class="text-accent font-bold">8:00 AM - 6:00 PM EST</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Saturday</span>
+                            <span class="text-accent font-bold">10:00 AM - 4:00 PM EST</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Sunday</span>
+                            <span class="text-accent font-bold">Closed</span>
+                        </div>
+                        <p class="text-gray-400 mt-6 pt-6 border-t border-gray-700">
+                            For urgent issues, our 24/7 support hotline is available to enterprise clients.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Location</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-300 text-lg">
+                            <i class="fas fa-building text-accent mr-2"></i>
+                            NET BAY, LLC
+                        </p>
+                        <p class="text-gray-400">
+                            8815 E. Echo Ct.<br/>
+                            Inverness, FL 34450<br/>
+                            United States
+                        </p>
+                        <p class="text-gray-400 mt-6 pt-6 border-t border-gray-700">
+                            We serve clients worldwide from our headquarters in Florida. Our distributed team works across multiple time zones to support your global operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Why Choose NET BAY -->
+    <section class="section-bg-2 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Why Work With NET BAY</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #b8860b; border-radius: 0.5rem;">
+                        <i class="fas fa-handshake text-gray-900 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Dedicated Partners</h3>
+                    <p class="text-gray-400 text-sm">We invest in long-term partnerships focused on your success, not just project completion.</p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #003d5c; border-radius: 0.5rem;">
+                        <i class="fas fa-rocket text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Fast Execution</h3>
+                    <p class="text-gray-400 text-sm">Agile methodologies and experienced teams deliver results quickly without compromising quality.</p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #1e3a5f; border-radius: 0.5rem;">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Enterprise Security</h3>
+                    <p class="text-gray-400 text-sm">Bank-grade security and compliance expertise protect your most critical assets and data.</p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background: linear-gradient(135deg, #b8860b, #003d5c); border-radius: 0.5rem;">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Proven ROI</h3>
+                    <p class="text-gray-400 text-sm">Our solutions consistently deliver measurable business value and accelerate growth initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 icon-box flex items-center justify-center">
+                            <i class="fas fa-network-wired text-white"></i>
+                        </div>
+                        <span class="font-bold text-lg text-accent">NET BAY</span>
+                    </div>
+                    <p class="text-gray-500">Enterprise IT Solutions</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Services</a></li>
+                        <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="services.html" class="hover:text-accent transition">Custom Development</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Cloud Solutions</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Security</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            8815 E. Echo Ct.<br/>Inverness, FL 34450
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-globe text-accent"></i>
+                            <a href="https://netbayllc.com" class="hover:text-accent transition">netbayllc.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 NET BAY, LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.8.0/wow.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formMessage = document.getElementById('formMessage');
+            const messageText = document.getElementById('messageText');
+            messageText.textContent = 'Thank you for your message! We\'ll get back to you within 24 hours.';
+            formMessage.classList.remove('hidden');
+            this.reset();
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

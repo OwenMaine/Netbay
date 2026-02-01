@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About NET BAY - IT B2B Software Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        body { background-color: #0f172a; color: #e5e7eb; }
+        .hero-bg { background: linear-gradient(to bottom, #111827, #0a1420, #111827); }
+        .section-bg-1 { background-color: #111827; }
+        .section-bg-2 { background: linear-gradient(to bottom, #111827, #0a1420); }
+        .btn-primary { background: linear-gradient(to right, #b8860b, #1e3a5f); color: white; padding: 1rem 2rem; border-radius: 0.5rem; font-weight: bold; display: inline-block; transition: all 0.3s; }
+        .btn-primary:hover { transform: scale(1.05); }
+        .card { background: linear-gradient(135deg, #1f2937, #111827); border: 1px solid #1e3a5f; border-radius: 0.75rem; padding: 2rem; }
+        .text-accent { color: #b8860b; }
+        .icon-box { background: linear-gradient(135deg, #b8860b, #1e3a5f); border-radius: 0.5rem; }
+        h1, h2, h3 { color: white; font-weight: bold; }
+        a { text-decoration: none; }
+        nav { background: rgba(17, 24, 39, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #1e3a5f; }
+        footer { background-color: #030712; border-top: 1px solid #1e3a5f; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 icon-box flex items-center justify-center">
+                    <i class="fas fa-network-wired text-white font-bold"></i>
+                </div>
+                <span class="text-2xl font-bold text-accent">NET BAY</span>
+            </div>
+            <ul class="hidden md:flex gap-8">
+                <li><a href="index.html" class="text-gray-100 hover:text-accent transition">Home</a></li>
+                <li><a href="#about" class="text-gray-100 hover:text-accent transition">About</a></li>
+                <li><a href="services.html" class="text-gray-100 hover:text-accent transition">Services</a></li>
+                <li><a href="contact.html" class="text-gray-100 hover:text-accent transition">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-accent text-xl"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero -->
+    <section id="about" class="hero-bg min-h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl" style="background-color: #1e3a5f; animation: pulse 3s infinite;"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl" style="background-color: #b8860b; animation: pulse 3s infinite 0.5s;"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white animate__animated animate__fadeInUp">
+                About <span class="text-accent">NET BAY</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                Leading B2B IT solutions provider with 15+ years of excellence
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 2: Company Overview -->
+    <section class="section-bg-1 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Who We Are</h2>
+                    <p class="text-lg text-gray-300 mb-4">
+                        NET BAY, LLC is a premier provider of enterprise IT solutions for B2B organizations. Founded in 2009, we've built our reputation on delivering innovative, scalable, and secure technology solutions that drive business transformation.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-4">
+                        Our team of certified architects and engineers specializes in custom software development, cloud infrastructure, and enterprise security. We partner with clients across industries to modernize their operations and accelerate growth.
+                    </p>
+                    <p class="text-lg text-gray-300">
+                        Based in Inverness, Florida, we serve clients globally, bringing local expertise with worldwide reach.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 flex items-center justify-center flex-shrink-0" style="background-color: #b8860b; border-radius: 0.5rem;">
+                                <i class="fas fa-handshake text-gray-900 text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-2">Partnership Focused</h3>
+                                <p class="text-gray-400">We treat your success as our success</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 flex items-center justify-center flex-shrink-0" style="background-color: #003d5c; border-radius: 0.5rem;">
+                                <i class="fas fa-lightbulb text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-2">Innovation Driven</h3>
+                                <p class="text-gray-400">Latest technologies and best practices</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 flex items-center justify-center flex-shrink-0" style="background-color: #1e3a5f; border-radius: 0.5rem;">
+                                <i class="fas fa-check-circle text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-2">Quality Assured</h3>
+                                <p class="text-gray-400">Rigorous testing and validation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Mission, Vision, Values -->
+    <section class="section-bg-2 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Our Foundation</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card" style="border-color: #b8860b;">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6" style="background-color: #b8860b; border-radius: 0.5rem;">
+                        <i class="fas fa-target text-gray-900 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                    <p class="text-gray-300">
+                        To empower enterprises with transformative IT solutions that drive innovation, streamline operations, and create sustainable competitive advantage.
+                    </p>
+                </div>
+
+                <div class="card" style="border-color: #003d5c;">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6" style="background-color: #003d5c; border-radius: 0.5rem;">
+                        <i class="fas fa-binoculars text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                    <p class="text-gray-300">
+                        To be the trusted technology partner for forward-thinking enterprises, recognized for delivering exceptional solutions and unwavering support.
+                    </p>
+                </div>
+
+                <div class="card" style="border-color: #1e3a5f;">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6" style="background-color: #1e3a5f; border-radius: 0.5rem;">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Values</h3>
+                    <p class="text-gray-300">
+                        Excellence, Integrity, Innovation, and Customer Success drive every decision we make and every project we undertake.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Expertise -->
+    <section class="section-bg-1 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">Our Expertise</h2>
+            <p class="text-center text-gray-400 mb-16 max-w-2xl mx-auto">Deep technical knowledge across key enterprise technologies</p>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #b8860b; border-radius: 0.5rem;">
+                        <i class="fas fa-code text-gray-900 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Development</h3>
+                    <p class="text-gray-400 text-sm">Custom software architecture and implementation</p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #003d5c; border-radius: 0.5rem;">
+                        <i class="fas fa-cloud text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Cloud</h3>
+                    <p class="text-gray-400 text-sm">AWS, Azure, GCP infrastructure design</p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background-color: #1e3a5f; border-radius: 0.5rem;">
+                        <i class="fas fa-shield text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Security</h3>
+                    <p class="text-gray-400 text-sm">Compliance and threat mitigation</p>
+                </div>
+
+                <div class="card text-center">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4" style="background: linear-gradient(135deg, #b8860b, #003d5c); border-radius: 0.5rem;">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Analytics</h3>
+                    <p class="text-gray-400 text-sm">Data insights and business intelligence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Why Choose Us -->
+    <section class="section-bg-2 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Why Choose NET BAY</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 flex items-center justify-center flex-shrink-0" style="background-color: #b8860b; border-radius: 50%; color: #111827;">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Proven Track Record</h3>
+                        <p class="text-gray-400">500+ successful projects with industry leaders</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 flex items-center justify-center flex-shrink-0" style="background-color: #b8860b; border-radius: 50%; color: #111827;">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Expert Team</h3>
+                        <p class="text-gray-400">Certified architects with 15+ years average experience</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 flex items-center justify-center flex-shrink-0" style="background-color: #b8860b; border-radius: 50%; color: #111827;">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">24/7 Support</h3>
+                        <p class="text-gray-400">Round-the-clock monitoring and assistance</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 flex items-center justify-center flex-shrink-0" style="background-color: #b8860b; border-radius: 50%; color: #111827;">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Scalable Solutions</h3>
+                        <p class="text-gray-400">Systems that grow with your business needs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-4" style="background: linear-gradient(to right, #0a1420, #111827, #003d5c);">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Enterprise?</h2>
+            <p class="text-xl text-gray-300 mb-8">Let's discuss how NET BAY can help you achieve your IT goals.</p>
+            <a href="contact.html" class="btn-primary">Contact Our Team</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 icon-box flex items-center justify-center">
+                            <i class="fas fa-network-wired text-white"></i>
+                        </div>
+                        <span class="font-bold text-lg text-accent">NET BAY</span>
+                    </div>
+                    <p class="text-gray-500">Enterprise IT Solutions</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-accent transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="services.html" class="hover:text-accent transition">Custom Development</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Cloud Solutions</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Security</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            8815 E. Echo Ct.<br/>Inverness, FL 34450
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-globe text-accent"></i>
+                            <a href="https://netbayllc.com" class="hover:text-accent transition">netbayllc.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 NET BAY, LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.8.0/wow.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
