@@ -1,0 +1,326 @@
+/* ============================================
+   NET BAY - Custom CSS Styles
+   Deep Color Theme with Modern Animations
+   ============================================ */
+
+:root {
+    --deep-amber: #b8860b;
+    --deep-amber-600: #8b6708;
+    --deep-indigo: #1e3a5f;
+    --deep-indigo-700: #162d47;
+    --deep-indigo-800: #0f1f31;
+    --deep-indigo-900: #0a1420;
+    --deep-sea-blue: #003d5c;
+    --deep-sea-blue-700: #002a42;
+    --deep-sea-blue-800: #001f2e;
+    --deep-silver: #6b7280;
+}
+
+/* ============================================
+   TAILWIND EXTENSIONS
+   ============================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure all text is visible */
+body, body * {
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+}
+
+p, span, a, li, div {
+    color: inherit;
+}
+
+/* Deep Color Utilities */
+@layer utilities {
+    /* Deep Amber */
+    .text-deep-amber { color: var(--deep-amber); }
+    .bg-deep-amber { background-color: var(--deep-amber); }
+    .border-deep-amber { border-color: var(--deep-amber); }
+    .border-deep-amber-500 { border-color: var(--deep-amber) !important; }
+    .border-deep-amber-400 { border-color: #d4a017 !important; }
+    .text-deep-amber-500 { color: var(--deep-amber); }
+    .hover\:border-deep-amber-500:hover { border-color: var(--deep-amber) !important; }
+    .hover\:border-deep-amber-400:hover { border-color: #d4a017 !important; }
+    .from-deep-amber { --tw-gradient-from: var(--deep-amber) !important; }
+    .to-deep-amber { --tw-gradient-to: var(--deep-amber) !important; }
+    
+    /* Deep Indigo */
+    .text-deep-indigo { color: var(--deep-indigo); }
+    .bg-deep-indigo { background-color: var(--deep-indigo); }
+    .border-deep-indigo { border-color: var(--deep-indigo); }
+    .border-deep-indigo-500 { border-color: var(--deep-indigo) !important; }
+    .border-deep-indigo-400 { border-color: #5b8fc4 !important; }
+    .text-deep-indigo-500 { color: var(--deep-indigo); }
+    .hover\:border-deep-indigo-500:hover { border-color: var(--deep-indigo) !important; }
+    .hover\:border-deep-indigo-400:hover { border-color: #5b8fc4 !important; }
+    .bg-deep-indigo-900 { background-color: var(--deep-indigo-900); }
+    .from-deep-indigo { --tw-gradient-from: var(--deep-indigo) !important; }
+    .to-deep-indigo { --tw-gradient-to: var(--deep-indigo) !important; }
+    
+    /* Deep Sea Blue */
+    .text-deep-sea-blue { color: var(--deep-sea-blue); }
+    .bg-deep-sea-blue { background-color: var(--deep-sea-blue); }
+    .border-deep-sea-blue { border-color: var(--deep-sea-blue); }
+    .border-deep-sea-blue-500 { border-color: var(--deep-sea-blue) !important; }
+    .border-deep-sea-blue-400 { border-color: #0066a1 !important; }
+    .text-deep-sea-blue-500 { color: var(--deep-sea-blue); }
+    .hover\:border-deep-sea-blue-500:hover { border-color: var(--deep-sea-blue) !important; }
+    .hover\:border-deep-sea-blue-400:hover { border-color: #0066a1 !important; }
+    .bg-deep-sea-blue-900 { background-color: var(--deep-sea-blue-800); }
+    .from-deep-sea-blue { --tw-gradient-from: var(--deep-sea-blue) !important; }
+    .to-deep-sea-blue { --tw-gradient-to: var(--deep-sea-blue) !important; }
+    
+    /* Deep Silver */
+    .text-deep-silver { color: var(--deep-silver); }
+    .bg-deep-silver { background-color: var(--deep-silver); }
+    .border-deep-silver { border-color: var(--deep-silver); }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes blob {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(184, 134, 11, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(184, 134, 11, 0.6);
+    }
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+    animation: glow 3s ease-in-out infinite;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.wow.animated {
+    visibility: visible;
+}
+
+/* ============================================
+   CUSTOM COMPONENTS
+   ============================================ */
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, var(--deep-amber), var(--deep-indigo), var(--deep-sea-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Smooth Hover Effects */
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(184, 134, 11, 0.2);
+}
+
+/* Card Glow Effect */
+.card-glow {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-glow::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(184, 134, 11, 0.1) 0%, transparent 70%);
+    transition: all 0.5s ease;
+}
+
+.card-glow:hover::before {
+    top: -50%;
+    right: 0;
+}
+
+/* Smooth Button Transitions */
+.btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-deep-amber to-deep-indigo text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl active:scale-95;
+}
+
+.btn-secondary {
+    @apply px-8 py-4 border-2 border-deep-indigo text-deep-indigo font-bold rounded-lg transition-all duration-300 transform hover:scale-105 hover:bg-deep-indigo hover:text-white active:scale-95;
+}
+
+/* Form Elements */
+input, textarea, select {
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1);
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 768px) {
+    .grid-auto {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* ============================================
+   SCROLL ANIMATIONS
+   ============================================ */
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   NAVBAR STYLES
+   ============================================ */
+
+nav {
+    background: rgba(17, 24, 39, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--deep-amber), var(--deep-indigo));
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+
+footer {
+    background: rgba(3, 7, 18, 0.95);
+}
+
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--deep-amber) !important;
+    transform: translateX(5px);
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    nav, footer {
+        display: none;
+    }
+}
