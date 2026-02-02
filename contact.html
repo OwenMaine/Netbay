@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <style>
+<<<<<<< HEAD
         body { background-color: #0f172a; color: #e5e7eb; }
+=======
+        html { overflow-x: hidden; }
+        body { background-color: #0f172a; color: #e5e7eb; overflow-x: hidden; }
+>>>>>>> master
         .hero-bg { background: linear-gradient(to bottom, #111827, #0a1420, #111827); }
         .section-bg-1 { background-color: #111827; }
         .section-bg-2 { background: linear-gradient(to bottom, #111827, #0a1420); }
@@ -19,22 +24,50 @@
         .icon-box { background: linear-gradient(135deg, #b8860b, #1e3a5f); border-radius: 0.5rem; }
         h1, h2, h3 { color: white; font-weight: bold; }
         a { text-decoration: none; }
+<<<<<<< HEAD
         nav { background: rgba(17, 24, 39, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #1e3a5f; }
         footer { background-color: #030712; border-top: 1px solid #1e3a5f; }
         input, textarea, select { background-color: #1f2937; border: 1px solid #374151; color: white; padding: 0.75rem 1rem; border-radius: 0.5rem; }
         input::placeholder, textarea::placeholder { color: #9ca3af; }
         input:focus, textarea:focus, select:focus { outline: none; border-color: #b8860b; box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1); }
+=======
+        nav { background: rgba(17, 24, 39, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #1e3a5f; width: 100%; box-sizing: border-box; }
+        footer { background-color: #030712; border-top: 1px solid #1e3a5f; }
+        .mobile-menu { display: none !important; position: absolute; top: 100%; left: 0; right: 0; background: rgba(17, 24, 39, 0.98); flex-direction: column; gap: 0; padding: 0; border-bottom: 1px solid #1e3a5f; z-index: 40; width: 100%; box-sizing: border-box; list-style: none; margin: 0; }
+        .mobile-menu.active { display: flex !important; }
+        .mobile-menu li { width: 100%; margin: 0; padding: 0; list-style: none; }
+        .mobile-menu li a { display: block; padding: 1rem 1.5rem; text-align: left; color: #e5e7eb; border-bottom: 1px solid rgba(30, 58, 95, 0.3); transition: all 0.3s; }
+        .mobile-menu li a:hover { background-color: rgba(184, 134, 11, 0.1); color: #b8860b; }
+        .hamburger-btn { background: none; border: none; cursor: pointer; padding: 0.5rem; display: flex; align-items: center; justify-content: center; color: #b8860b; font-size: 1.5rem; z-index: 51; position: relative; }
+        .hamburger-btn:hover { opacity: 0.8; }
+        .hamburger-btn:focus { outline: 2px solid #b8860b; }
+        input, textarea, select { background-color: #1f2937; border: 1px solid #374151; color: white; padding: 0.75rem 1rem; border-radius: 0.5rem; }
+        input::placeholder, textarea::placeholder { color: #9ca3af; }
+        input:focus, textarea:focus, select:focus { outline: none; border-color: #b8860b; box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1); }
+        @media (min-width: 768px) {
+            .mobile-menu { display: none !important; }
+        }
+>>>>>>> master
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50">
+<<<<<<< HEAD
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <div class="w-10 h-10 icon-box flex items-center justify-center">
                     <i class="fas fa-network-wired text-white font-bold"></i>
                 </div>
                 <span class="text-2xl font-bold text-accent">NET BAY</span>
+=======
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center w-full box-border">
+            <div class="flex items-center gap-2 flex-shrink-0">
+                <div class="w-10 h-10 icon-box flex items-center justify-center">
+                    <i class="fas fa-network-wired text-white font-bold"></i>
+                </div>
+                <span class="text-2xl font-bold text-accent hidden xs:inline">NET BAY</span>
+>>>>>>> master
             </div>
             <ul class="hidden md:flex gap-8">
                 <li><a href="index.html" class="text-gray-100 hover:text-accent transition">Home</a></li>
@@ -42,8 +75,20 @@
                 <li><a href="services.html" class="text-gray-100 hover:text-accent transition">Services</a></li>
                 <li><a href="#contact" class="text-gray-100 hover:text-accent transition">Contact</a></li>
             </ul>
+<<<<<<< HEAD
             <button class="md:hidden text-accent text-xl"><i class="fas fa-bars"></i></button>
         </div>
+=======
+            <button class="md:hidden hamburger-btn text-accent text-2xl" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+        <!-- Mobile Menu -->
+        <ul class="mobile-menu" id="mobileMenu">
+            <li><a href="index.html" class="text-gray-100 hover:text-accent transition">Home</a></li>
+            <li><a href="about.html" class="text-gray-100 hover:text-accent transition">About</a></li>
+            <li><a href="services.html" class="text-gray-100 hover:text-accent transition">Services</a></li>
+            <li><a href="#contact" class="text-gray-100 hover:text-accent transition">Contact</a></li>
+        </ul>
+>>>>>>> master
     </nav>
 
     <!-- Section 1: Hero -->
@@ -320,6 +365,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.8.0/wow.min.js"></script>
+<<<<<<< HEAD
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -331,6 +377,41 @@
             setTimeout(() => {
                 formMessage.classList.add('hidden');
             }, 5000);
+=======
+    <script src="js/script.js"></script>
+    <script>
+        // Quick test to ensure menu works
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Quick test loaded');
+            const btn = document.getElementById('mobileMenuBtn');
+            const menu = document.getElementById('mobileMenu');
+            if (btn && menu) {
+                console.log('Elements found - setting up direct handler');
+                btn.addEventListener('click', function(e) {
+                    console.log('Direct handler: Button clicked');
+                    e.preventDefault();
+                    e.stopPropagation();
+                    menu.classList.toggle('active');
+                    console.log('Menu now has class:', menu.className);
+                });
+            }
+
+            // Contact form handler
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const formMessage = document.getElementById('formMessage');
+                    const messageText = document.getElementById('messageText');
+                    messageText.textContent = 'Thank you for your message! We\'ll get back to you within 24 hours.';
+                    formMessage.classList.remove('hidden');
+                    this.reset();
+                    setTimeout(() => {
+                        formMessage.classList.add('hidden');
+                    }, 5000);
+                });
+            }
+>>>>>>> master
         });
     </script>
 </body>
