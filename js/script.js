@@ -5,6 +5,7 @@
 
 // Initialize WOW.js for scroll animations
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM Content Loaded - Initializing...');
     new WOW().init();
     initializeInteractions();
     setupFormHandling();
@@ -15,10 +16,47 @@ document.addEventListener('DOMContentLoaded', function() {
    ============================================ */
 
 function initializeInteractions() {
+    console.log('Initializing interactions...');
+    
     // Mobile Menu Toggle
-    const menuButton = document.querySelector('nav button');
-    if (menuButton) {
-        menuButton.addEventListener('click', toggleMobileMenu);
+    const menuButton = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    console.log('Menu Button:', menuButton);
+    console.log('Mobile Menu:', mobileMenu);
+    
+    if (menuButton && mobileMenu) {
+        console.log('Setting up menu button click handler...');
+        
+        menuButton.addEventListener('click', function(e) {
+            console.log('Menu button clicked!');
+            e.stopPropagation();
+            console.log('Current menu classes:', mobileMenu.className);
+            mobileMenu.classList.toggle('active');
+            console.log('After toggle, menu classes:', mobileMenu.className);
+        });
+        
+        // Close menu when clicking on a link
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        console.log('Menu links found:', menuLinks.length);
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Menu link clicked, closing menu');
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('nav')) {
+                if (mobileMenu.classList.contains('active')) {
+                    console.log('Click outside nav, closing menu');
+                    mobileMenu.classList.remove('active');
+                }
+            }
+        });
+    } else {
+        console.log('Menu button or mobile menu not found!');
     }
 
     // Smooth Scroll
@@ -53,11 +91,9 @@ function initializeInteractions() {
    ============================================ */
 
 function toggleMobileMenu() {
-    const navList = document.querySelector('nav ul');
-    if (navList) {
-        navList.classList.toggle('hidden');
-        navList.classList.toggle('flex');
-        navList.classList.add('flex-col', 'absolute', 'top-full', 'left-0', 'right-0', 'bg-gray-900', 'p-4');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenu) {
+        mobileMenu.classList.toggle('active');
     }
 }
 
