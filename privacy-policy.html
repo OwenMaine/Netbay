@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - NET BAY IT Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        html { overflow-x: hidden; }
+        body { background-color: #0f172a; color: #e5e7eb; overflow-x: hidden; }
+        .hero-bg { background: linear-gradient(to bottom, #111827, #0a1420, #111827); }
+        .section-bg-1 { background-color: #111827; }
+        .section-bg-2 { background: linear-gradient(to bottom, #111827, #0a1420); }
+        .btn-primary { background: linear-gradient(to right, #b8860b, #1e3a5f); color: white; padding: 1rem 2rem; border-radius: 0.5rem; font-weight: bold; display: inline-block; transition: all 0.3s; }
+        .btn-primary:hover { transform: scale(1.05); }
+        .card { background: linear-gradient(135deg, #1f2937, #111827); border: 1px solid #1e3a5f; border-radius: 0.75rem; padding: 2rem; }
+        .text-accent { color: #b8860b; }
+        .icon-box { background: linear-gradient(135deg, #b8860b, #1e3a5f); border-radius: 0.5rem; }
+        h1, h2, h3 { color: white; font-weight: bold; }
+        a { text-decoration: none; }
+        nav { background: rgba(17, 24, 39, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #1e3a5f; width: 100%; box-sizing: border-box; }
+        footer { background-color: #030712; border-top: 1px solid #1e3a5f; }
+        .mobile-menu { display: none !important; position: absolute; top: 100%; left: 0; right: 0; background: rgba(17, 24, 39, 0.98); flex-direction: column; gap: 0; padding: 0; border-bottom: 1px solid #1e3a5f; z-index: 40; width: 100%; box-sizing: border-box; list-style: none; margin: 0; }
+        .mobile-menu.active { display: flex !important; }
+        .mobile-menu li { width: 100%; margin: 0; padding: 0; list-style: none; }
+        .mobile-menu li a { display: block; padding: 1rem 1.5rem; text-align: left; color: #e5e7eb; border-bottom: 1px solid rgba(30, 58, 95, 0.3); transition: all 0.3s; }
+        .mobile-menu li a:hover { background-color: rgba(184, 134, 11, 0.1); color: #b8860b; }
+        .hamburger-btn { background: none; border: none; cursor: pointer; padding: 0.5rem; display: flex; align-items: center; justify-content: center; color: #b8860b; font-size: 1.5rem; z-index: 51; position: relative; }
+        .hamburger-btn:hover { opacity: 0.8; }
+        .hamburger-btn:focus { outline: 2px solid #b8860b; }
+        .content-section { max-width: 4xl; }
+        .content-section h2 { margin-top: 2rem; margin-bottom: 1rem; font-size: 1.875rem; }
+        .content-section h3 { margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.25rem; }
+        .content-section p { margin-bottom: 1rem; line-height: 1.6; color: #d1d5db; }
+        .content-section ul { margin-bottom: 1rem; margin-left: 1.5rem; }
+        .content-section li { margin-bottom: 0.5rem; color: #d1d5db; }
+        @media (min-width: 768px) {
+            .mobile-menu { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center w-full box-border">
+            <div class="flex items-center gap-2 flex-shrink-0">
+                <div class="w-10 h-10 icon-box flex items-center justify-center">
+                    <i class="fas fa-network-wired text-white font-bold"></i>
+                </div>
+                <span class="text-2xl font-bold text-accent hidden xs:inline">NET BAY</span>
+            </div>
+            <ul class="hidden md:flex gap-8">
+                <li><a href="index.html" class="text-gray-100 hover:text-accent transition">Home</a></li>
+                <li><a href="about.html" class="text-gray-100 hover:text-accent transition">About</a></li>
+                <li><a href="services.html" class="text-gray-100 hover:text-accent transition">Services</a></li>
+                <li><a href="contact.html" class="text-gray-100 hover:text-accent transition">Contact</a></li>
+            </ul>
+            <button class="md:hidden hamburger-btn text-accent text-2xl" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+        <!-- Mobile Menu -->
+        <ul class="mobile-menu" id="mobileMenu">
+            <li><a href="index.html" class="text-gray-100 hover:text-accent transition">Home</a></li>
+            <li><a href="about.html" class="text-gray-100 hover:text-accent transition">About</a></li>
+            <li><a href="services.html" class="text-gray-100 hover:text-accent transition">Services</a></li>
+            <li><a href="contact.html" class="text-gray-100 hover:text-accent transition">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Privacy Content -->
+    <section class="section-bg-1 min-h-screen pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 text-white">Privacy Policy</h1>
+            <p class="text-gray-400 mb-8">Last updated: February 2, 2026</p>
+
+            <div class="content-section">
+                <h2>1. Introduction</h2>
+                <p>NET BAY ("we", "us", "our", or "Company") operates the netbayllc.com website. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our website and services, and the choices you have associated with that data.</p>
+
+                <h2>2. Information Collection and Use</h2>
+                <p>We collect different types of information for various purposes to provide and improve our website and services:</p>
+                <h3>Types of Data Collected:</h3>
+                <ul>
+                    <li><strong>Personal Data:</strong> Name, email address, phone number, company information, and other details you voluntarily provide through contact forms or service inquiries.</li>
+                    <li><strong>Usage Data:</strong> Information about how you use our website, including IP address, browser type, pages visited, and time spent on pages.</li>
+                    <li><strong>Cookies and Tracking:</strong> We use cookies and similar tracking technologies to enhance your experience on our website.</li>
+                </ul>
+
+                <h2>3. Use of Data</h2>
+                <p>NET BAY uses the collected data for various purposes:</p>
+                <ul>
+                    <li>To provide and maintain our website and services</li>
+                    <li>To notify you about changes to our website or services</li>
+                    <li>To respond to your inquiries and provide customer support</li>
+                    <li>To gather analysis or valuable information regarding website usage</li>
+                    <li>To monitor the effectiveness of our services</li>
+                    <li>To detect, prevent and address technical and security issues</li>
+                    <li>To send you promotional communications (with your consent)</li>
+                </ul>
+
+                <h2>4. Security of Data</h2>
+                <p>The security of your data is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal data, we cannot guarantee its absolute security.</p>
+
+                <h2>5. Sharing of Information</h2>
+                <p>We do not sell, trade, or rent your personal information to third parties. However, we may share information with:</p>
+                <ul>
+                    <li>Service providers who assist us in operating our website and services</li>
+                    <li>Legal authorities when required by law or to protect our rights</li>
+                    <li>Business partners with your consent for specific purposes</li>
+                </ul>
+
+                <h2>6. Cookies</h2>
+                <p>Our website uses cookies to enhance your browsing experience. Cookies are small files of information saved by your browser on your device. You can choose to disable cookies through your browser settings, though some features of our website may not function properly without them.</p>
+
+                <h2>7. Third-Party Links</h2>
+                <p>Our website may contain links to third-party websites. This privacy policy does not apply to external sites, and we are not responsible for their privacy practices. We encourage you to review the privacy policies of any third-party websites before providing your information.</p>
+
+                <h2>8. Your Rights</h2>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal data that we hold</li>
+                    <li>Request correction of inaccurate data</li>
+                    <li>Request deletion of your personal data</li>
+                    <li>Opt-out of marketing communications</li>
+                    <li>Data portability in a structured, commonly used format</li>
+                </ul>
+
+                <h2>9. Changes to This Privacy Policy</h2>
+                <p>We may update our privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the "Last updated" date at the top of this policy.</p>
+
+                <h2>10. Children's Privacy</h2>
+                <p>Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will promptly delete such information and terminate the child's account.</p>
+
+                <h2>11. International Data Transfers</h2>
+                <p>Your information may be transferred to, stored in, and processed in countries other than your country of residence, including the United States. These countries may have data protection laws that differ from those of your home country.</p>
+
+                <h2>12. GDPR Compliance</h2>
+                <p>If you are a resident of the European Economic Area (EEA), you have additional rights under the General Data Protection Regulation (GDPR). We are committed to processing your personal data in compliance with GDPR requirements.</p>
+
+                <h2>13. CCPA Compliance</h2>
+                <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA) regarding your personal information. We comply with CCPA requirements to the extent applicable.</p>
+
+                <h2>14. Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us at:</p>
+                <ul>
+                    <li>Email: info@netbayllc.com</li>
+                    <li>Address: 8815 E. Echo Ct., Inverness, FL 34450</li>
+                    <li>Website: https://netbayllc.com</li>
+                </ul>
+
+                <h2>15. Data Retention</h2>
+                <p>We retain your personal data only for as long as necessary to provide our services or as required by law. You can request deletion of your data at any time by contacting us.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition">About</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="services.html" class="hover:text-accent transition">Custom Development</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Cloud Solutions</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Security</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition">Support</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="terms-of-service.html" class="hover:text-accent transition">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-accent transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            8815 E. Echo Ct.<br/>Inverness, FL 34450
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-globe text-accent"></i>
+                            <a href="https://netbayllc.com" class="hover:text-accent transition">netbayllc.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 NET BAY, LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.8.0/wow.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('mobileMenuBtn');
+            const menu = document.getElementById('mobileMenu');
+            if (btn && menu) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    menu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
